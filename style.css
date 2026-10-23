@@ -81,10 +81,14 @@ label:hover{
 
 .gallery{
     width:90%;
+    max-width: 1000px;;
     display:grid;
-    margin: 0;
+    margin: auto;
+    justify-content: center;
     grid-template-columns: repeat(5,1fr);
     grid-gap: 20px;
+    padding-bottom: 20px;
+    box-shadow: 3px 3px 5px grey;
 }
 
 .pic{
@@ -94,5 +98,9 @@ label:hover{
 
 .pic img{
     height: 100%;
-    width:100%;
+    width:230px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px grey;
+    cursor: pointer;
 }

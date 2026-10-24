@@ -2,7 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:arial;
+}
+
+
+body {
+    background-image: url("Background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 input {
@@ -19,12 +28,15 @@ h1 {
     position: relative;
     margin: 40px 0px;
     font-size: 34px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1::before {
     content: "";
+    box-shadow: 3px 3px 5px #26658C;
     position: absolute;
-    background-color: rgb(196, 196, 254);
+    color: #011C40;
+    background-color: #011C40;
     width: 100px;
     height: 4px;
     bottom: -10px;
@@ -48,18 +60,18 @@ h1::before {
 }
 
 .top {
-    background-color: rgb(245, 245, 245);
+    background-color:#54ACBF ;
     width: 90%;
     margin: 0 auto 20px auto;
     display: flex;
     align-items: center;
     height: 60px;
     border-radius: 6px;
-    box-shadow: 3px 3px 5px rgb(146, 146, 231);
+    box-shadow: 3px 3px 5px #011C40;
 }
 
 h3 {
-    background-color: rgb(221, 221, 221);
+    background-color: #26658C;
     line-height: 60px;
     padding: 0 50px;
     height: 100%;
@@ -70,7 +82,7 @@ label {
     display: inline-block;
     height: 100%;
     line-height: 60px;
-    color: grey;
+    color: white;
     margin: 0 20px;
     cursor: pointer;
     font-size: 18px;
@@ -98,7 +110,7 @@ label:hover {
     height: 220px;
     min-width: 0;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px grey;
+    box-shadow: 3px 3px 5px #023859;
     cursor: pointer;
     overflow: hidden;
 }

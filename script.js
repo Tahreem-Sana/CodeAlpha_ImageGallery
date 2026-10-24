@@ -46,3 +46,7 @@ check5.addEventListener("change", function() {
 check6.addEventListener("change", function() {
     filterPhotos("art");
 });
+
+check7.addEventListener("change", function() {
+    filterPhotos("cartoon");
+});

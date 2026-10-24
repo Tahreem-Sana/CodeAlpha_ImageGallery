@@ -88,12 +88,15 @@ label:hover{
     grid-template-columns: repeat(5,1fr);
     grid-gap: 20px;
     padding-bottom: 20px;
-    box-shadow: 3px 3px 5px grey;
+    
 }
 
 .pic{
     position:relative;
     height: 220px;
+    border-radius:10px;
+    box-shadow: 3px 3px 5px grey;
+    cursor: pointer;
 }
 
 .pic img{
@@ -101,6 +104,40 @@ label:hover{
     width:230px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 3px 3px 5px grey;
-    cursor: pointer;
 }
+
+.pic::before{
+    content:"Photo";
+    position:absolute;
+    top:50%;
+    bottom:50%;
+    color:white;
+    transform:translate(-50%,-50%);
+    font-size:20px;
+    font-weight: bold;
+    margin-top: -100px;
+    transition:.3s;
+    transition-delay:.2s ;
+}
+
+.pic::after{
+    content: "";
+    height: 100%;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,.4);
+    border-radius: 8px;
+    height: 0;
+    transition: .3s;
+}
+
+.pic:hover:before{
+    margin-top: 0;
+}
+
+.pic:hover:after{
+    width:100%;
+}
+

@@ -67,7 +67,7 @@ h1::before {
     align-items: center;
     height: 60px;
     border-radius: 6px;
-    box-shadow: 3px 3px 5px #011C40;
+    box-shadow: 3px 3px 50px #011C40;
 }
 
 h3 {
@@ -110,7 +110,7 @@ label:hover {
     height: 220px;
     min-width: 0;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px #023859;
+    box-shadow: 3px 3px 6px #023859;
     cursor: pointer;
     overflow: hidden;
 }

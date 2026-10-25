@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <input type="radio" name="photos" id="check1" checked>
     <input type="radio" name="photos" id="check2">
@@ -16,6 +17,7 @@
     <input type="radio" name="photos" id="check5">
     <input type="radio" name="photos" id="check6">
     <input type="radio" name="photos" id="check7">
+    <input type="radio" name="photos" id="check8">
 
     <div class="container">
         <h1>Image Gallery by TS &#9829;</h1>
@@ -28,6 +30,7 @@
             <label for="check5">Calligraphy</label>
             <label for="check6">Art</label>
             <label for="check7">Cartoons</label>
+            <label for="check8">Notes</label>
         </div>
 
         <div class="gallery">
@@ -86,6 +89,9 @@
             </div>
             <div class="pic cartoon">
                 <img src="C3.jpeg">
+            </div>
+            <div class="pic notes">
+                <img src="">
             </div>
 
             <div class="pic nature">
@@ -195,6 +201,13 @@
                 <img src="Q8.jpeg">
             </div>
         </div>
+
+        <div class="lightbox" id="lightbox">
+            <button class="close-btn" id="closeLightbox" aria-label="Close image preview">&times;</button>
+
+            <img src="" alt="Large image preview" id="lightboxImg">
+        </div>
+
 </body>
 
 </html>

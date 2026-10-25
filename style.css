@@ -5,7 +5,6 @@
     font-family:arial;
 }
 
-
 body {
     background-image: url("Background.jpeg");
     background-size: cover;
@@ -180,4 +179,48 @@ label:hover {
         font-size: 14px;
         line-height: 40px;
     }
+}
+
+.pic{
+    overflow: hidden;
+    background-color: #023859;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pic:hover img {
+    
+    transform: scale(0.97);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.lightbox.show {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    cursor: pointer;
 }

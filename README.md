@@ -77,6 +77,10 @@ Possible future enhancements include:
 **Project Type:** Frontend Web Development  
 **Core Technologies:** HTML, CSS, and JavaScript
 
+**Github:** https://github.com/Tahreem-Sana/CodeAlpha_ImageGallery.git
+**Live-Demo:** codealpha-gallery.vercel.app 
+
+
 ## 👩‍💻 Author
 
 **Name:** Tahreem Sana
